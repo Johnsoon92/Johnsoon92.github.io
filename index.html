@@ -9,7 +9,7 @@
 <meta property="og:title" content="Sean John&#39;s blog">
 <meta property="og:url" content="http://yoursite.com/index.html">
 <meta property="og:site_name" content="Sean John&#39;s blog">
-<meta property="og:locale" content="default">
+<meta property="og:locale" content="zh">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Sean John&#39;s blog">
   
@@ -37,6 +37,10 @@
         <a href="/" id="logo">Sean John&#39;s blog</a>
       </h1>
       
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">没有调查，就没有发言权</a>
+        </h2>
+      
     </div>
     <div id="header-inner" class="inner">
       <nav id="main-nav">
@@ -62,10 +66,10 @@
       <div class="outer">
         <section id="main">
   
-    <article id="post-git-commands" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-idea-tips" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2018/04/19/git-commands/" class="article-date">
-  <time datetime="2018-04-19T08:04:56.000Z" itemprop="datePublished">2018-04-19</time>
+    <a href="/2018/05/11/idea-tips/" class="article-date">
+  <time datetime="2018-05-11T09:41:16.000Z" itemprop="datePublished">2018-05-11</time>
 </a>
     
   </div>
@@ -76,7 +80,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2018/04/19/git-commands/">git commands</a>
+      <a class="article-title" href="/2018/05/11/idea-tips/">idea tips</a>
     </h1>
   
 
@@ -84,12 +88,220 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>HelloWorld</p>
+        <ul>
+<li>To open any class in the editor quickly, press Ctrl+N (Navigate | Class) and start typing the name of the class. Choose the class from a drop-down list that appears.</li>
+<li>The Code Completion feature lets you quickly complete different kinds of statements in the code. For example, start typing a class name and press Ctrl+空格 to complete it. When multiple choices are available, they are shown in the lookup list.</li>
+<li>You can quickly find all places where a particular class, method or variable is used in the whole project by positioning the caret at the symbol’s name or at its usage in code and pressing Alt+F7 (Edit | Find | Find Usages in the popup menu).</li>
+<li>To quickly see the documentation for a class or method at caret, press Ctrl+Q (View | Quick Documentation).</li>
+<li>To navigate to the declaration of a class, method or variable used somewhere in the code, position the caret at the usage and press Ctrl+B (Navigate | Declaration). You can also click the mouse on usages with the Ctrl key pressed to jump to declarations.</li>
+<li>You can quickly navigate in the currently edited file with Ctrl+F12 (Navigate | File Structure).<br>It shows the list of members of the current class. Select an element you want to navigate to and press the Enter key or the F4 key.<br>To easily locate an item in the list, just start typing its name.</li>
+<li>You can easily rename your classes, methods and variables with automatic correction of all places where they are used.<br>To try it, place the caret at the symbol you want to rename, and press Shift+F6 (Refactor | Rename). Type the new name in the popup window that appears, or select one of the suggested names, and press Enter.</li>
+<li>You may easily override methods of the base class by pressing Ctrl+O (Code | Override Methods).<br>To implement methods of the interfaces that the current class implements (or of the abstract base class), use Ctrl+I (Code | Implement methods).</li>
+<li>The SmartType code completion greatly helps to find methods and variables that are suitable in the current context, by analyzing the expected type of the whole expression. So doing, IntelliJ IDEA pinpoints the top five most suitable results and highlights them on the blue background. For example, type</li>
+</ul>
+<p>and press Ctrl+Shift+空格:</p>
+<ul>
+<li>Using Alt+Insert (Code | Generate) in the editor, you can easily generate getter and setter methods for any fields of your class.</li>
+<li>To quickly select the currently edited element (class, file, method or field) in any view (Project view, Structure view or other), press Alt+F1.</li>
+<li>When you want to catch exceptions thrown by some code fragment, select it in the editor, press Ctrl+Alt+T (Code | Surround With) and choose try / catch. The catch blocks for all the exceptions thrown inside the block will be generated automatically.<br>You can customize the bodies of the generated catch blocks on the Code tab of File | Settings | File and Code Templates.<br>Use other items in the list to surround with other constructs.</li>
+</ul>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/04/19/git-commands/" data-id="cjg6ifn8300000wgjdfw7vrpq" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/05/11/idea-tips/" data-id="cjh69xnkc0001dagj2c0d9r23" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-git/git-introduce" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/05/11/git/git-introduce/" class="article-date">
+  <time datetime="2018-05-11T03:36:38.000Z" itemprop="datePublished">2018-05-11</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/git/">git</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/05/11/git/git-introduce/">git-introduce</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h3><p>Git是分布式版本控制系统。每个人电脑上都有一个完整的版本库，即使没有网络，也能实现版本控制。在实际的使用中，通常有一台充当“中央服务器”的电脑用于方便成员交换”修改”。</p>
+<h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><p>在Linux上安装Git: <code>sudo apt-get install git</code><br>在Windows上安装Git：<a href="http://www.baidu.com" target="_blank" rel="noopener">下载安装程序</a>，然后在工作目录右键，“Git Bash Here”<br>安装完以后配置一下用户名和邮箱（若需对某个仓库指定不同的用户名和密码，去掉<code>--global</code>参数，在该仓库下运行相同命令）：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name &quot;Your Name&quot;</span><br><span class="line">git config --global user.email &quot;Your Email&quot;</span><br></pre></td></tr></table></figure></p>
+<h3 id="创建版本库"><a href="#创建版本库" class="headerlink" title="创建版本库"></a>创建版本库</h3><p>在一个空目录下运行<code>git init</code>，git就会将该目录初始化为git仓库，仓库建好以后，该目录中所有文件变动都将被git记录。这时你会发现原目录下多了一个<code>.git</code>目录，它就是用来存放版本信息的，轻易不要改动其中的内容。<br>另外需要说明的是，git只能跟踪文本文件的改动，对于二进制文件，它们能被git管理，但无法跟踪文件的变化。Microsoft的Word格式是二进制的。<br>还有，不要用Windows的记事本编辑文本文件，因为记事本会给每个文件开头加个0xefbbbf的字符，这可能导致原本正确的程序无法通过编译。</p>
+<h3 id="使用版本库"><a href="#使用版本库" class="headerlink" title="使用版本库"></a>使用版本库</h3><p>首先在git目录下编写一个文本文件<code>readme.txt</code>，内容自定。<br>把一个文件放到git仓库只需两步：</p>
+<ol>
+<li>用<code>git add</code>告诉git把文件添加到仓库：   <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git add readme.txt</span><br><span class="line">```   </span><br><span class="line">2. 用`git commit`告诉git把文件提交到仓库：</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>git commit -m “wrote a readme file”<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">这里，`-m`后面输入的是本次的提交说明，简要地说明本次提交改动的内容，便于将来从提交历史中查找改动记录。</span><br><span class="line"></span><br><span class="line">### 查看版本库当前文件状态</span><br><span class="line">`git status`</span><br><span class="line">### 查看提交历史</span><br><span class="line">`git log`，可以加上`--pretty=oneline`参数查看简要信息，可以加上`--graph`参数查看分支合并图   </span><br><span class="line">`git blame &lt;file&gt;`</span><br><span class="line">### 版本回退</span><br><span class="line">`git reset --hard HEAD^`或 `git reset --hard commit_id`</span><br><span class="line">### 查看命令历史</span><br><span class="line">`git reflog`可用于查看命令历史   </span><br><span class="line">在命令历史中，你可以找到`commit id`用于版本回退或恢复</span><br><span class="line">### 工作区和暂存区</span><br><span class="line">`git checkout -- file`可以丢弃工作区的修改，将这个文件回到最近一次的`git add`或`git commit`时的状态   </span><br><span class="line">`git reset HEAD file`可以将暂存区中的修改退回到工作区   </span><br><span class="line">请注意对比这两个命令与[版本回退](#版本回退)命令  </span><br><span class="line">### 生成SSH密钥对</span><br></pre></td></tr></table></figure></p>
+<p>ssh-keygen -t rsa -C “<a href="mailto:myemail@email.com" target="_blank" rel="noopener">myemail@email.com</a>“<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">### 将本地库与远程库关联</span><br></pre></td></tr></table></figure></p>
+<p>git remote add origin <url><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">### 将本地库的内容推送到远程库</span><br><span class="line">`git push -u origin master`,其中`-u`是`--set-upstream`的简写，表示将本地master分支与远程库关联，以后就可以直接通过`git push`提交</span><br><span class="line">### 创建分支</span><br><span class="line">`git checkout -b dev`创建并切换至dev分支  </span><br><span class="line">这相当于以下两个命令：</span><br></pre></td></tr></table></figure></url></p>
+<p>git branch dev<br>git checkout dev<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">### stash</span><br></pre></td></tr></table></figure></p>
+<p>git stash apply stash@{0}<br>git stash drop stash@{0}<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">```</span><br><span class="line">git stash pop</span><br></pre></td></tr></table></figure></p>
+<h3 id="标签"><a href="#标签" class="headerlink" title="标签"></a>标签</h3><p>标签相当于是<code>commit_id</code>的别名<br><code>git tag</code>查看所有标签<br><code>git tag &lt;name&gt; &lt;commit_id&gt;</code>为commit_id打上名为name的标签，若commit_id为空，则默认打在最新提交的commit_id上。<br><code>git tag -a &lt;name&gt; -m &lt;tagmessage&gt;</code><br><code>git show &lt;tagname&gt;</code>查看标签信息</p>
+<h3 id="查看某个文件为何被-gitignore忽略"><a href="#查看某个文件为何被-gitignore忽略" class="headerlink" title="查看某个文件为何被.gitignore忽略"></a>查看某个文件为何被<code>.gitignore</code>忽略</h3><p><code>git check-ignore -v &lt;file&gt;</code></p>
+<h3 id="配置命令别名"><a href="#配置命令别名" class="headerlink" title="配置命令别名"></a>配置命令别名</h3><p><code>git config --global alias.st status</code><br><code>git config --global alias.co checkout</code><br><code>git config --global alias.unstage &#39;reset HEAD&#39;</code><br><code>git config --global alias.lg &quot;log --color --graph --pretty=format:&#39;%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)&lt;%an&gt;%Creset&#39; --abbrev-commit&quot;</code></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/05/11/git/git-introduce/" data-id="cjh69xnl30008dagjb6603emb" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-MarkDown-Gramma" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/04/19/MarkDown-Gramma/" class="article-date">
+  <time datetime="2018-04-19T15:49:22.000Z" itemprop="datePublished">2018-04-19</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/languages/">languages</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/04/19/MarkDown-Gramma/">MarkDown Gramma</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/04/19/MarkDown-Gramma/" data-id="cjh69xnkf0002dagjvjs9h5uq" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/MarkDown/">MarkDown</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-MacLehose-Trail-Guide" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/04/19/MacLehose-Trail-Guide/" class="article-date">
+  <time datetime="2018-04-19T15:26:53.000Z" itemprop="datePublished">2018-04-19</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/travel/">travel</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/04/19/MacLehose-Trail-Guide/">五一麦理浩径徒步计划</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="行程"><a href="#行程" class="headerlink" title="行程"></a>行程</h3><p>早上<br>天河客运站最早地铁6:10，到广州南，46m(7:00到广州南)<br>广州南到深圳北高铁37m（大概7：40的高铁，8:20到深圳北）<br>深圳北到罗湖34m （9:30到罗湖）<br><!-- `考虑在深圳玩一晚第二天过关`   --><br>罗湖（香港）到北潭涌（麦理浩径起点）2h6m （若10:30过完关，下午12:40到麦理浩径起点）<br>麦理浩径一段（北潭涌至浪茄，距离10.6km，参考时间3h）<br>在地一、二段中间露营一晚<br><code>若在深圳玩一晚，第二天大早过关，9:30达麦径起点，走快点，一天可走完一、二段</code><br>麦理浩径二段（浪茄至北潭凹，距离13.5km，参考时间5h）（九巴96R末班车19:30/九巴94到西贡）<br>北潭凹到罗湖2h12m（下午3点离开北潭凹，17：12到罗湖）<br>罗湖到深圳北34m（若过关花1h,18：46到深圳北）<br>深圳北到广州南（若乘19:30高铁,20：10到广州南）</p>
+<h3 id="准备物资"><a href="#准备物资" class="headerlink" title="准备物资"></a>准备物资</h3><ul>
+<li>防晒、防蚊、防虫、防雨</li>
+<li>手电、指南针、口哨</li>
+<li>药（驱风油、创口贴、感冒药、云南白药）</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/04/19/MacLehose-Trail-Guide/" data-id="cjh69xnl4000adagjll5b7ps2" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/HK/">HK</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-git/git-commands" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/04/19/git/git-commands/" class="article-date">
+  <time datetime="2018-04-19T08:04:56.000Z" itemprop="datePublished">2018-04-19</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/git/">git</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/04/19/git/git-commands/">git commands</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="配置用户名和邮箱"><a href="#配置用户名和邮箱" class="headerlink" title="配置用户名和邮箱"></a>配置用户名和邮箱</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name &quot;&lt;yourName&gt;&quot;</span><br><span class="line">git config --global user.email &quot;&lt;yourEmail&gt;&quot;</span><br></pre></td></tr></table></figure>
+<h2 id="生成密钥对"><a href="#生成密钥对" class="headerlink" title="生成密钥对"></a>生成密钥对</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &quot;myemail@email.com&quot;</span><br></pre></td></tr></table></figure>
+<h3 id="ssh秘钥保存"><a href="#ssh秘钥保存" class="headerlink" title="ssh秘钥保存"></a>ssh秘钥保存</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ssh-agent bash --login -i</span><br><span class="line">ssh-add</span><br></pre></td></tr></table></figure>
+<h2 id="检出远程仓库"><a href="#检出远程仓库" class="headerlink" title="检出远程仓库"></a>检出远程仓库</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">mkdir repo</span><br><span class="line">cd repo</span><br><span class="line">git remote add origin &lt;url&gt;</span><br><span class="line">git fetch origin</span><br><span class="line">git checkout master</span><br></pre></td></tr></table></figure>
+<p>以上六个命令可由以下一条命令代替<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone &lt;url&gt; repo</span><br></pre></td></tr></table></figure></p>
+<p>拖省略<code>repo</code>，git会默认使用仓库名作为新建文件夹的名字</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/04/19/git/git-commands/" data-id="cjh69xnl10007dagjfpez3ino" class="article-share-link">Share</a>
       
       
     </footer>
@@ -134,7 +346,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/04/19/hello-world/" data-id="cjg6ifn8900010wgjbvxbnshz" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/04/19/hello-world/" data-id="cjh69xnk70000dagjxnrfk6bd" class="article-share-link">Share</a>
       
       
     </footer>
@@ -150,18 +362,39 @@
           <aside id="sidebar">
   
     
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/git/">git</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/languages/">languages</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/travel/">travel</a></li></ul>
+    </div>
+  </div>
+
 
   
     
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/HK/">HK</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/MarkDown/">MarkDown</a></li></ul>
+    </div>
+  </div>
+
 
   
     
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/HK/" style="font-size: 10px;">HK</a> <a href="/tags/MarkDown/" style="font-size: 10px;">MarkDown</a>
+    </div>
+  </div>
+
   
     
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/04/">April 2018</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/05/">May 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/04/">April 2018</a></li></ul>
     </div>
   </div>
 
@@ -174,11 +407,23 @@
       <ul>
         
           <li>
-            <a href="/2018/04/19/git-commands/">git commands</a>
+            <a href="/2018/05/11/idea-tips/">idea tips</a>
           </li>
         
           <li>
-            <a href="/2018/04/19/hello-world/">Hello World</a>
+            <a href="/2018/05/11/git/git-introduce/">git-introduce</a>
+          </li>
+        
+          <li>
+            <a href="/2018/04/19/MarkDown-Gramma/">MarkDown Gramma</a>
+          </li>
+        
+          <li>
+            <a href="/2018/04/19/MacLehose-Trail-Guide/">五一麦理浩径徒步计划</a>
+          </li>
+        
+          <li>
+            <a href="/2018/04/19/git/git-commands/">git commands</a>
           </li>
         
       </ul>
