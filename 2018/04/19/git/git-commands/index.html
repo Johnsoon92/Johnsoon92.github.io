@@ -13,7 +13,7 @@
 <meta property="og:site_name" content="Sean John&#39;s blog">
 <meta property="og:description" content="配置用户名和邮箱12git config --global user.name &amp;quot;&amp;lt;yourName&amp;gt;&amp;quot;git config --global user.email &amp;quot;&amp;lt;yourEmail&amp;gt;&amp;quot; 生成密钥对1ssh-keygen -t rsa -C &amp;quot;myemail@email.com&amp;quot; ssh秘钥保存12ssh-a">
 <meta property="og:locale" content="zh">
-<meta property="og:updated_time" content="2018-05-16T13:14:33.826Z">
+<meta property="og:updated_time" content="2018-07-03T08:46:50.013Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="git commands">
 <meta name="twitter:description" content="配置用户名和邮箱12git config --global user.name &amp;quot;&amp;lt;yourName&amp;gt;&amp;quot;git config --global user.email &amp;quot;&amp;lt;yourEmail&amp;gt;&amp;quot; 生成密钥对1ssh-keygen -t rsa -C &amp;quot;myemail@email.com&amp;quot; ssh秘钥保存12ssh-a">
@@ -100,12 +100,15 @@
 <h3 id="ssh秘钥保存"><a href="#ssh秘钥保存" class="headerlink" title="ssh秘钥保存"></a>ssh秘钥保存</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ssh-agent bash --login -i</span><br><span class="line">ssh-add</span><br></pre></td></tr></table></figure>
 <h2 id="检出远程仓库"><a href="#检出远程仓库" class="headerlink" title="检出远程仓库"></a>检出远程仓库</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">mkdir repo</span><br><span class="line">cd repo</span><br><span class="line">git remote add origin &lt;url&gt;</span><br><span class="line">git fetch origin</span><br><span class="line">git checkout master</span><br></pre></td></tr></table></figure>
 <p>以上六个命令可由以下一条命令代替<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone &lt;url&gt; repo</span><br></pre></td></tr></table></figure></p>
-<p>拖省略<code>repo</code>，git会默认使用仓库名作为新建文件夹的名字</p>
+<p>若省略<code>repo</code>，git会默认使用仓库名作为新建文件夹的名字</p>
+<h2 id="新建远程分支"><a href="#新建远程分支" class="headerlink" title="新建远程分支"></a>新建远程分支</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git checkout -b new_local_branch from_branch</span><br><span class="line">git push origin new_local_branch:new_remote_branch</span><br></pre></td></tr></table></figure>
+<h2 id="删除远程分支"><a href="#删除远程分支" class="headerlink" title="删除远程分支"></a>删除远程分支</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push origin --delete remote_branch</span><br></pre></td></tr></table></figure>
+<p>或者也可以推送一个空分支至远程分支:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push origin :remote_branch</span><br></pre></td></tr></table></figure></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/04/19/git/git-commands/" data-id="cjhalkvv5000nxwgj9m2lndd8" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/04/19/git/git-commands/" data-id="cjj5gh935000nwsgjv5varol0" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/common-commands/">common commands</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/version-control/">version control</a></li></ul>
@@ -125,6 +128,11 @@
       </div>
     </a>
   
+  
+    <a href="/2018/04/01/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">hexo introduce</div>
+    </a>
   
 </nav>
 
@@ -181,10 +189,6 @@
       <ul>
         
           <li>
-            <a href="/2018/05/16/hello-world/">hexo introduce</a>
-          </li>
-        
-          <li>
             <a href="/2018/05/16/vue/vue-introduce/">vue introduce</a>
           </li>
         
@@ -198,6 +202,10 @@
         
           <li>
             <a href="/2018/05/11/git/git-introduce/">git-introduce</a>
+          </li>
+        
+          <li>
+            <a href="/2018/04/19/MarkDown-Gramma/">MarkDown Gramma</a>
           </li>
         
       </ul>

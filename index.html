@@ -66,57 +66,6 @@
       <div class="outer">
         <section id="main">
   
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/05/16/hello-world/" class="article-date">
-  <time datetime="2018-05-16T13:21:47.384Z" itemprop="datePublished">2018-05-16</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/hexo/">hexo</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/05/16/hello-world/">hexo introduce</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/05/16/hello-world/" data-id="cjhalkvum0005xwgjy59fqgaq" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/common-commands/">common commands</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
     <article id="post-vue/vue-introduce" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2018/05/16/vue/vue-introduce/" class="article-date">
@@ -177,12 +126,19 @@
 <li><code>vm.$nextTick([callback])</code><br>将回调延迟到下次 DOM 更新循环之后执行。在修改数据之后立即使用它，然后等待 DOM 更新。它跟全局方法 Vue.nextTick 一样，不同的是回调的 this 自动绑定到调用它的实例上。如果没有提供回调且在支持 Promise 的环境中，则返回一个 Promise。    </li>
 <li><code>vm.$destroy()</code><br>完全销毁一个实例。清理它与其它实例的连接，解绑它的全部指令及事件监听器。<br>触发 beforeDestroy 和 destroyed 的钩子。</li>
 </ul>
-<h3 id="部分命令"><a href="#部分命令" class="headerlink" title="部分命令"></a>部分命令</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 通过 $props 将父组件的 props 一起传给子组件 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">child-component</span> <span class="attr">v-bind</span>=<span class="string">"$props"</span>&gt;</span><span class="tag">&lt;/<span class="name">child-component</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="部分指令"><a href="#部分指令" class="headerlink" title="部分指令"></a>部分指令</h3><ul>
+<li><p><code>v-bind</code>    </p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 通过 $props 将父组件的 props 一起传给子组件 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">child-component</span> <span class="attr">v-bind</span>=<span class="string">"$props"</span>&gt;</span><span class="tag">&lt;/<span class="name">child-component</span>&gt;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p><code>v-pre</code><br>跳过这个元素和它的子元素的编译过程。可以用来显示原始 Mustache 标签。跳过大量没有指令的节点会加快编译。    </p>
+</li>
+<li><code>v-once</code><br>只渲染元素和组件一次。随后的重新渲染，元素/组件及其所有的子节点将被视为静态内容并跳过。这可以用于优化更新性能。    </li>
+</ul>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/05/16/vue/vue-introduce/" data-id="cjhalkvv7000rxwgj6r3ck3b3" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/05/16/vue/vue-introduce/" data-id="cjj5gh938000rwsgj5bf06aft" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/MVVM/">MVVM</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/javascript-module/">javascript module</a></li></ul>
@@ -224,7 +180,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/05/15/js-date-constructor/" data-id="cjhalkvuo0006xwgjebc1il31" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/05/15/js-date-constructor/" data-id="cjj5gh92c0005wsgjjfc4z0o0" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/javascript-cross-platform/">javascript cross platform</a></li></ul>
@@ -279,7 +235,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/05/11/idea-tips/" data-id="cjhalkvuk0004xwgjhigp4o58" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/05/11/idea-tips/" data-id="cjj5gh92e0006wsgjx5iyyauh" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/common-commands/">common commands</a></li></ul>
@@ -318,18 +274,30 @@
     <div class="article-entry" itemprop="articleBody">
       
         <h3 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h3><p>Git是分布式版本控制系统。每个人电脑上都有一个完整的版本库，即使没有网络，也能实现版本控制。在实际的使用中，通常有一台充当“中央服务器”的电脑用于方便成员交换”修改”。</p>
-<h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><p>在Linux上安装Git: <code>sudo apt-get install git</code><br>在Windows上安装Git：<a href="http://www.baidu.com" target="_blank" rel="noopener">下载安装程序</a>，然后在工作目录右键，“Git Bash Here”<br>安装完以后配置一下用户名和邮箱（若需对某个仓库指定不同的用户名和密码，去掉<code>--global</code>参数，在该仓库下运行相同命令）：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name &quot;Your Name&quot;</span><br><span class="line">git config --global user.email &quot;Your Email&quot;</span><br></pre></td></tr></table></figure></p>
+<h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><p>在Linux上安装Git: <code>sudo apt-get install git</code><br>在Windows上安装Git：<a href="http://www.baidu.com" target="_blank" rel="noopener">下载安装程序</a>，然后在工作目录右键，“Git Bash Here”<br>安装完以后配置一下用户名和邮箱（若需对某个仓库指定不同的用户名和密码，去掉<code>--global</code>参数，在该仓库下运行相同命令）：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name &quot;Your Name&quot;</span><br><span class="line">git config --global user.email &quot;Your Email&quot;</span><br></pre></td></tr></table></figure>
 <h3 id="创建版本库"><a href="#创建版本库" class="headerlink" title="创建版本库"></a>创建版本库</h3><p>在一个空目录下运行<code>git init</code>，git就会将该目录初始化为git仓库，仓库建好以后，该目录中所有文件变动都将被git记录。这时你会发现原目录下多了一个<code>.git</code>目录，它就是用来存放版本信息的，轻易不要改动其中的内容。<br>另外需要说明的是，git只能跟踪文本文件的改动，对于二进制文件，它们能被git管理，但无法跟踪文件的变化。Microsoft的Word格式是二进制的。<br>还有，不要用Windows的记事本编辑文本文件，因为记事本会给每个文件开头加个0xefbbbf的字符，这可能导致原本正确的程序无法通过编译。</p>
 <h3 id="使用版本库"><a href="#使用版本库" class="headerlink" title="使用版本库"></a>使用版本库</h3><p>首先在git目录下编写一个文本文件<code>readme.txt</code>，内容自定。<br>把一个文件放到git仓库只需两步：</p>
 <ol>
-<li>用<code>git add</code>告诉git把文件添加到仓库：   <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git add readme.txt</span><br><span class="line">```   </span><br><span class="line">2. 用`git commit`告诉git把文件提交到仓库：</span><br></pre></td></tr></table></figure>
-</li>
+<li>用<code>git add</code>告诉git把文件添加到仓库：</li>
 </ol>
-<p>git commit -m “wrote a readme file”<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">这里，`-m`后面输入的是本次的提交说明，简要地说明本次提交改动的内容，便于将来从提交历史中查找改动记录。</span><br><span class="line"></span><br><span class="line">### 查看版本库当前文件状态</span><br><span class="line">`git status`</span><br><span class="line">### 查看提交历史</span><br><span class="line">`git log`，可以加上`--pretty=oneline`参数查看简要信息，可以加上`--graph`参数查看分支合并图   </span><br><span class="line">`git blame &lt;file&gt;`</span><br><span class="line">### 版本回退</span><br><span class="line">`git reset --hard HEAD^`或 `git reset --hard commit_id`</span><br><span class="line">### 查看命令历史</span><br><span class="line">`git reflog`可用于查看命令历史   </span><br><span class="line">在命令历史中，你可以找到`commit id`用于版本回退或恢复</span><br><span class="line">### 工作区和暂存区</span><br><span class="line">`git checkout -- file`可以丢弃工作区的修改，将这个文件回到最近一次的`git add`或`git commit`时的状态   </span><br><span class="line">`git reset HEAD file`可以将暂存区中的修改退回到工作区   </span><br><span class="line">请注意对比这两个命令与[版本回退](#版本回退)命令  </span><br><span class="line">### 生成SSH密钥对</span><br></pre></td></tr></table></figure></p>
-<p>ssh-keygen -t rsa -C “<a href="mailto:myemail@email.com" target="_blank" rel="noopener">myemail@email.com</a>“<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">### 将本地库与远程库关联</span><br></pre></td></tr></table></figure></p>
-<p>git remote add origin <url><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">### 将本地库的内容推送到远程库</span><br><span class="line">`git push -u origin master`,其中`-u`是`--set-upstream`的简写，表示将本地master分支与远程库关联，以后就可以直接通过`git push`提交</span><br><span class="line">### 创建分支</span><br><span class="line">`git checkout -b dev`创建并切换至dev分支  </span><br><span class="line">这相当于以下两个命令：</span><br></pre></td></tr></table></figure></url></p>
-<p>git branch dev<br>git checkout dev<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">### stash</span><br></pre></td></tr></table></figure></p>
-<p>git stash apply stash@{0}<br>git stash drop stash@{0}<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">```</span><br><span class="line">git stash pop</span><br></pre></td></tr></table></figure></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git add readme.txt</span><br></pre></td></tr></table></figure>
+<ol start="2">
+<li>用<code>git commit</code>告诉git把文件提交到仓库：   </li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git commit -m &quot;wrote a readme file&quot;</span><br></pre></td></tr></table></figure>
+<p>这里，<code>-m</code>后面输入的是本次的提交说明，简要地说明本次提交改动的内容，便于将来从提交历史中查找改动记录。</p>
+<h3 id="查看版本库当前文件状态"><a href="#查看版本库当前文件状态" class="headerlink" title="查看版本库当前文件状态"></a>查看版本库当前文件状态</h3><p><code>git status</code></p>
+<h3 id="查看提交历史"><a href="#查看提交历史" class="headerlink" title="查看提交历史"></a>查看提交历史</h3><p><code>git log</code>，可以加上<code>--pretty=oneline</code>参数查看简要信息，可以加上<code>--graph</code>参数查看分支合并图<br><code>git blame &lt;file&gt;</code></p>
+<h3 id="版本回退"><a href="#版本回退" class="headerlink" title="版本回退"></a>版本回退</h3><p><code>git reset --hard HEAD^</code>或 <code>git reset --hard commit_id</code></p>
+<h3 id="查看命令历史"><a href="#查看命令历史" class="headerlink" title="查看命令历史"></a>查看命令历史</h3><p><code>git reflog</code>可用于查看命令历史<br>在命令历史中，你可以找到<code>commit id</code>用于版本回退或恢复</p>
+<h3 id="工作区和暂存区"><a href="#工作区和暂存区" class="headerlink" title="工作区和暂存区"></a>工作区和暂存区</h3><p><code>git checkout -- file</code>可以丢弃工作区的修改，将这个文件回到最近一次的<code>git add</code>或<code>git commit</code>时的状态<br><code>git reset HEAD file</code>可以将暂存区中的修改退回到工作区<br>请注意对比这两个命令与<a href="#版本回退">版本回退</a>命令  </p>
+<h3 id="生成SSH密钥对"><a href="#生成SSH密钥对" class="headerlink" title="生成SSH密钥对"></a>生成SSH密钥对</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &quot;myemail@email.com&quot;</span><br></pre></td></tr></table></figure>
+<h3 id="将本地库与远程库关联"><a href="#将本地库与远程库关联" class="headerlink" title="将本地库与远程库关联"></a>将本地库与远程库关联</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote add origin &lt;url&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="将本地库的内容推送到远程库"><a href="#将本地库的内容推送到远程库" class="headerlink" title="将本地库的内容推送到远程库"></a>将本地库的内容推送到远程库</h3><p><code>git push -u origin master</code>,其中<code>-u</code>是<code>--set-upstream</code>的简写，表示将本地master分支与远程库关联，以后就可以直接通过<code>git push</code>提交</p>
+<h3 id="创建分支"><a href="#创建分支" class="headerlink" title="创建分支"></a>创建分支</h3><p><code>git checkout -b dev</code>创建并切换至dev分支<br>这相当于以下两个命令：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git branch dev</span><br><span class="line">git checkout dev</span><br></pre></td></tr></table></figure></p>
+<h3 id="stash"><a href="#stash" class="headerlink" title="stash"></a>stash</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git stash apply stash@&#123;0&#125;</span><br><span class="line">git stash drop stash@&#123;0&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git stash pop</span><br></pre></td></tr></table></figure>
 <h3 id="标签"><a href="#标签" class="headerlink" title="标签"></a>标签</h3><p>标签相当于是<code>commit_id</code>的别名<br><code>git tag</code>查看所有标签<br><code>git tag &lt;name&gt; &lt;commit_id&gt;</code>为commit_id打上名为name的标签，若commit_id为空，则默认打在最新提交的commit_id上。<br><code>git tag -a &lt;name&gt; -m &lt;tagmessage&gt;</code><br><code>git show &lt;tagname&gt;</code>查看标签信息</p>
 <h3 id="查看某个文件为何被-gitignore忽略"><a href="#查看某个文件为何被-gitignore忽略" class="headerlink" title="查看某个文件为何被.gitignore忽略"></a>查看某个文件为何被<code>.gitignore</code>忽略</h3><p><code>git check-ignore -v &lt;file&gt;</code></p>
 <h3 id="配置命令别名"><a href="#配置命令别名" class="headerlink" title="配置命令别名"></a>配置命令别名</h3><p><code>git config --global alias.st status</code><br><code>git config --global alias.co checkout</code><br><code>git config --global alias.unstage &#39;reset HEAD&#39;</code><br><code>git config --global alias.lg &quot;log --color --graph --pretty=format:&#39;%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)&lt;%an&gt;%Creset&#39; --abbrev-commit&quot;</code></p>
@@ -337,7 +305,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/05/11/git/git-introduce/" data-id="cjhalkvv6000oxwgjzffdfvdn" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/05/11/git/git-introduce/" data-id="cjj5gh937000owsgjz1hy41yz" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/version-control/">version control</a></li></ul>
@@ -375,7 +343,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/04/19/MarkDown-Gramma/" data-id="cjhalkvug0001xwgjz3jbz33q" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/04/19/MarkDown-Gramma/" data-id="cjj5gh92b0004wsgjqehevkxs" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/common-commands/">common commands</a></li></ul>
@@ -423,7 +391,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/04/19/MacLehose-Trail-Guide/" data-id="cjhalkvub0000xwgj98tonf5y" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/04/19/MacLehose-Trail-Guide/" data-id="cjj5gh9210000wsgja0z5hv1r" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/travel/">travel</a></li></ul>
@@ -466,15 +434,69 @@
 <h3 id="ssh秘钥保存"><a href="#ssh秘钥保存" class="headerlink" title="ssh秘钥保存"></a>ssh秘钥保存</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ssh-agent bash --login -i</span><br><span class="line">ssh-add</span><br></pre></td></tr></table></figure>
 <h2 id="检出远程仓库"><a href="#检出远程仓库" class="headerlink" title="检出远程仓库"></a>检出远程仓库</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">mkdir repo</span><br><span class="line">cd repo</span><br><span class="line">git remote add origin &lt;url&gt;</span><br><span class="line">git fetch origin</span><br><span class="line">git checkout master</span><br></pre></td></tr></table></figure>
 <p>以上六个命令可由以下一条命令代替<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone &lt;url&gt; repo</span><br></pre></td></tr></table></figure></p>
-<p>拖省略<code>repo</code>，git会默认使用仓库名作为新建文件夹的名字</p>
+<p>若省略<code>repo</code>，git会默认使用仓库名作为新建文件夹的名字</p>
+<h2 id="新建远程分支"><a href="#新建远程分支" class="headerlink" title="新建远程分支"></a>新建远程分支</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git checkout -b new_local_branch from_branch</span><br><span class="line">git push origin new_local_branch:new_remote_branch</span><br></pre></td></tr></table></figure>
+<h2 id="删除远程分支"><a href="#删除远程分支" class="headerlink" title="删除远程分支"></a>删除远程分支</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push origin --delete remote_branch</span><br></pre></td></tr></table></figure>
+<p>或者也可以推送一个空分支至远程分支:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push origin :remote_branch</span><br></pre></td></tr></table></figure></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/04/19/git/git-commands/" data-id="cjhalkvv5000nxwgj9m2lndd8" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/04/19/git/git-commands/" data-id="cjj5gh935000nwsgjv5varol0" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/common-commands/">common commands</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/version-control/">version control</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/04/01/hello-world/" class="article-date">
+  <time datetime="2018-04-01T09:41:16.000Z" itemprop="datePublished">2018-04-01</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/hexo/">hexo</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/04/01/hello-world/">hexo introduce</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/04/01/hello-world/" data-id="cjj5gh9260001wsgj18m6em7d" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/common-commands/">common commands</a></li></ul>
 
     </footer>
   </div>
@@ -534,10 +556,6 @@
       <ul>
         
           <li>
-            <a href="/2018/05/16/hello-world/">hexo introduce</a>
-          </li>
-        
-          <li>
             <a href="/2018/05/16/vue/vue-introduce/">vue introduce</a>
           </li>
         
@@ -551,6 +569,10 @@
         
           <li>
             <a href="/2018/05/11/git/git-introduce/">git-introduce</a>
+          </li>
+        
+          <li>
+            <a href="/2018/04/19/MarkDown-Gramma/">MarkDown Gramma</a>
           </li>
         
       </ul>

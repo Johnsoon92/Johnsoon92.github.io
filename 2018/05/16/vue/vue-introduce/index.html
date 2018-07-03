@@ -13,7 +13,7 @@
 <meta property="og:site_name" content="Sean John&#39;s blog">
 <meta property="og:description" content="一个简单的Vue应用123&amp;lt;div id=&quot;app&quot;&amp;gt;  &amp;#123;&amp;#123;message&amp;#125;&amp;#125;&amp;lt;/div&amp;gt; 123456var app = new Vue(&amp;#123;  el: &apos;#app&apos;,  data： &amp;#123;    message: &apos;Hello World&apos;  &amp;#125;&amp;#125;) 注册Vue组件1234Vue.compone">
 <meta property="og:locale" content="zh">
-<meta property="og:updated_time" content="2018-05-17T13:43:11.693Z">
+<meta property="og:updated_time" content="2018-06-15T03:49:44.049Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="vue introduce">
 <meta name="twitter:description" content="一个简单的Vue应用123&amp;lt;div id=&quot;app&quot;&amp;gt;  &amp;#123;&amp;#123;message&amp;#125;&amp;#125;&amp;lt;/div&amp;gt; 123456var app = new Vue(&amp;#123;  el: &apos;#app&apos;,  data： &amp;#123;    message: &apos;Hello World&apos;  &amp;#125;&amp;#125;) 注册Vue组件1234Vue.compone">
@@ -129,12 +129,19 @@
 <li><code>vm.$nextTick([callback])</code><br>将回调延迟到下次 DOM 更新循环之后执行。在修改数据之后立即使用它，然后等待 DOM 更新。它跟全局方法 Vue.nextTick 一样，不同的是回调的 this 自动绑定到调用它的实例上。如果没有提供回调且在支持 Promise 的环境中，则返回一个 Promise。    </li>
 <li><code>vm.$destroy()</code><br>完全销毁一个实例。清理它与其它实例的连接，解绑它的全部指令及事件监听器。<br>触发 beforeDestroy 和 destroyed 的钩子。</li>
 </ul>
-<h3 id="部分命令"><a href="#部分命令" class="headerlink" title="部分命令"></a>部分命令</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 通过 $props 将父组件的 props 一起传给子组件 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">child-component</span> <span class="attr">v-bind</span>=<span class="string">"$props"</span>&gt;</span><span class="tag">&lt;/<span class="name">child-component</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="部分指令"><a href="#部分指令" class="headerlink" title="部分指令"></a>部分指令</h3><ul>
+<li><p><code>v-bind</code>    </p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 通过 $props 将父组件的 props 一起传给子组件 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">child-component</span> <span class="attr">v-bind</span>=<span class="string">"$props"</span>&gt;</span><span class="tag">&lt;/<span class="name">child-component</span>&gt;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p><code>v-pre</code><br>跳过这个元素和它的子元素的编译过程。可以用来显示原始 Mustache 标签。跳过大量没有指令的节点会加快编译。    </p>
+</li>
+<li><code>v-once</code><br>只渲染元素和组件一次。随后的重新渲染，元素/组件及其所有的子节点将被视为静态内容并跳过。这可以用于优化更新性能。    </li>
+</ul>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/05/16/vue/vue-introduce/" data-id="cjhalkvv7000rxwgj6r3ck3b3" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/05/16/vue/vue-introduce/" data-id="cjj5gh938000rwsgj5bf06aft" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/MVVM/">MVVM</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/javascript-module/">javascript module</a></li></ul>
@@ -144,15 +151,6 @@
   
     
 <nav id="article-nav">
-  
-    <a href="/2018/05/16/hello-world/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          hexo introduce
-        
-      </div>
-    </a>
   
   
     <a href="/2018/05/15/js-date-constructor/" id="article-nav-older" class="article-nav-link-wrap">
@@ -215,10 +213,6 @@
       <ul>
         
           <li>
-            <a href="/2018/05/16/hello-world/">hexo introduce</a>
-          </li>
-        
-          <li>
             <a href="/2018/05/16/vue/vue-introduce/">vue introduce</a>
           </li>
         
@@ -232,6 +226,10 @@
         
           <li>
             <a href="/2018/05/11/git/git-introduce/">git-introduce</a>
+          </li>
+        
+          <li>
+            <a href="/2018/04/19/MarkDown-Gramma/">MarkDown Gramma</a>
           </li>
         
       </ul>
